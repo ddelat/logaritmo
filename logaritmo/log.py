@@ -3,14 +3,14 @@ import math
 
 def calcular_logaritmo_neperiano(numero):
     if numero > 0:
-        return math.log(numero)
+        resultado=math.log(numero)
+        print(f"El logaritmo neperiano de {numero} es: {resultado}")
     else:
-        print('Error en el numero')
+        print("Error en el numero,", numero, "tiene que ser positivo")
 
 
 # Ejemplo de uso
 numero = 10
-resultado = calcular_logaritmo_neperiano(numero)
-print(f"El logaritmo neperiano de {numero} es: {resultado}")
-numero = -1
-resultado = calcular_logaritmo_neperiano(numero)
+calcular_logaritmo_neperiano(numero)
+numero2 = -1
+calcular_logaritmo_neperiano(numero2)
